@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-
+import DATA, { data } from './data'
+import NAV from './componenet/navbar/nav'
+import MAIN from './componenet/main/main'
+import FOOTER from './componenet/footer/footer'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" >
+      <NAV fullName= {data.fullName} profession={data.profession} HOME={data.HOME}
+      RESUME={data.RESUME} PROJECTS={data.PROJECTS} CONTACT={data.CONTACT}/>
+      <MAIN photoprofil={data.photoprofil} about={data.about}></MAIN>
+      <FOOTER></FOOTER>
+      
     </div>
   );
 }
