@@ -1,4 +1,5 @@
 .footer {
+    display: flex;
     position: fixed;
     left: 0;
     
@@ -6,4 +7,19 @@
     background-color: #e83556;
     color: white;
     text-align: center;
+ }
+ .footer>div{
+   
+     width: 20%;
+    margin: 5px;
+    padding: 5px;
+    justify-items: center;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    
+ }
+ .footer img{
+    width: 20PX;
+    HEIGHT: 20PX;
  }

@@ -1,17 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
-import DATA, { data } from './data'
-import NAV from './componenet/navbar/nav'
-import MAIN from './componenet/main/main'
-import FOOTER from './componenet/footer/footer'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import Project from './pages/Project'
+import Resume from './pages/Resume'
 function App() {
   return (
     <div className="App" >
-      <NAV fullName= {data.fullName} profession={data.profession} HOME={data.HOME}
-      RESUME={data.RESUME} PROJECTS={data.PROJECTS} CONTACT={data.CONTACT}/>
-      <MAIN photoprofil={data.photoprofil} about={data.about}></MAIN>
-      <FOOTER></FOOTER>
-      
+       <Router>
+         <Switch>
+           <Route path="/home" component ={Home}></Route>
+           <Route path="/contact" component ={Contact}></Route>
+           <Route path="/project" component ={Project}></Route>
+           <Route path="/resume" component ={Resume}></Route>
+         </Switch>
+       </Router>
     </div>
   );
 }

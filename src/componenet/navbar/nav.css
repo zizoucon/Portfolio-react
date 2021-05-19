@@ -6,6 +6,7 @@
     MARGIN: 5PX;
     PADDING: 5PX;
 
+
 }
 .container>div{
 
@@ -38,7 +39,7 @@
               
               li a {
                 display: block;
-                color: white;
+                color: rgb(129, 83, 83);
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
